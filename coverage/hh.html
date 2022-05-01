@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<h6>Heyyy</h6>
+<body>
+    <script>function multiply(a,b){
+        return a*b;
+      }
+      
+      function currying(fn){
+        return function(a){
+          return function(b){
+            return fn(a,b);
+          }
+        }
+      }
+      
+      var curriedMultiply = currying(multiply);
+      
+      multiply(4, 3); // Returns 12
+      
+      curriedMultiply(4)(3); // Also returns 12</script>
+</body>
+</html>

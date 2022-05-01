@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Changing HTML attributes</title>
+</head>
+<h2>What can javascript do?</h2>
+<body>
+    <p>Javascript can change HTML attributes.</p>
+    <p>In this case Javascript changes the value of the src (source) 
+        attribute of an image.</p>
+        
+        <button onclick="document.getElementById('myImage').src='pic_bulbon.gif'">
+            Turn on the light</button>
+
+        <img id="myImage" src="/images/bulb-off.gif" style="width:100px">
+        
+        <button onclick="document.getElementById('myImage').src='bulb2-on.gif'">
+            Turn off the light</button>
+</html>
