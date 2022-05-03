@@ -1,0 +1,67 @@
+#<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data types JavaScript</title>
+</head>
+<h2>Numbers can be written with or without decimals.</h2>
+<body>
+    <p id="demo"></p>
+
+    <script>
+        let x = 34.00;
+        let y = 24;
+        let z = 23.65;
+
+        document.getElementById('demo').innerHTML = x + '<br>' + y + '<br>' + z;
+    </script>
+
+    <h2>large or extra small numbers can be written written with exponentials</h2>
+    <p id="demo2"></p>
+
+    <script>
+        let a = 345e5;
+        let b = 345e-5;
+
+        document.getElementById('demo2').innerHTML = a + '<br>' + b;
+    </script>
+    <h2>JavaScript Booleans</h2>
+        <p>Booleans can only have two values; true or false.</p>
+        <p id="demo3"></p>
+
+        <script>
+            let c = 5; 
+            let d = 5;
+            let f = 7;
+
+            document.getElementById('demo3').innerHTML =(c==d) + '<br>' + (d==f);
+        </script>
+
+        <h2>JavaScript arrays</h2>
+        <p>They can be written in brackets. <br> Arrays items are separated by commas.</p>
+        <p id="demo4"></p>
+        <script>
+            const cars = ["BMW","Audi","TX","Probox"]
+
+            document.getElementById('demo4').innerHTML = cars[1] + '<br>' + cars[2];
+        </script>
+
+        <h2>JavaScript objects</h2>
+        <p id="demo5"></p>
+
+        <script>
+            const person = {
+                firstName : "Pablo",
+                lastName : "Escobar",
+                age : 72,
+                eyeColor : "blue",
+            };
+
+            document.getElementById('demo5').innerHTML = person.firstName + ' is ' + 
+            person.age + ' years old.' + '<br>' +
+            person.lastName + ' has ' + person.eyeColor + ' eyes.' ;
+        </script>
+</body>
+</html
