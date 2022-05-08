@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Functions</title>
+</head>
+<body>
+    <h2>What JavaScript can do.</h2>
+    <p>Accessing a function without () will return the 
+        function definition instead of the function result:</p>
+    <p id="demo"></p>
+   
+    <script>
+        function toCelsius(f){
+            return (5/9) * (f-32);
+        }
+        document.getElementById('demo').innerHTML = toCelsius;
+    </script>    
+
+    <h2>Functions used as variable values.</h2>
+    <p>Instead of using a variable to store the return value of a function. <br>
+    You can use the function directly as a variable value.</p>
+    <p id="demo2"></p>
+    <script>
+        document.getElementById('demo2').innerHTML = 'The temperature is ' + toCelsius(77) + ' celsius';
+    </script>
+
+    <h2>Local Variables</h2>
+    <p>Outside myFunction() car is undefined.</p>
+    <p id="demo3"></p>
+    <p id="demo4"></p>
+
+    <script>
+        myFunction();
+
+        function myFunction(){
+            let carName = 'Volvo';
+            document.getElementById('demo3').innerHTML = typeof carName + ' ' + carName;
+        }
+
+        document.getElementById('demo4').innerHTML = typeof carName;
+    </script>
+
+    
+</body>
+</html>
