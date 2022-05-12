@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Strings Methods</title>
+  </head>
+  <body>
+    <h2>Extracting String parts</h2>
+    <p>There are 3 methods for extracting a part of a String</p>
+
+    <ol class="a">
+      <li>Slice(start, end)</li>
+      <li>substring(start, end)</li>
+      <li>Substr(start, length)</li>
+    </ol>
+
+    <style>
+      ol.a {
+        list-style-type: square;
+      }
+    </style>
+
+    <h2>JS strings slice()</h2>
+    <p>
+      It extracts parts of a string and returns the extracted part ina new
+      string end not included
+    </p>
+    <p id="demo1"></p>
+    <script>
+      let str = "Lionel-Messi, Cristiano, Sterling";
+      let goat = str.slice(14, 23);
+      document.getElementById("demo1").innerHTML = "The goat is " + goat + ".";
+
+      let str2 = "Lionel-Messi, Cristiano, Sterling";
+      let goat2 = str2.slice(-33, -21);
+      document.getElementById("demo2").innerHTML =
+        "The goat2 is " + goat2 + ".";
+      document.getElementById("demo3").innerHTML = str2.length;
+
+      let x = str2.slice(7);
+      document.getElementById("demo4").innerHTML = x;
+
+      let y = str2.slice(-19);
+      document.getElementById("demo5").innerHTML = y;
+
+      let z = str2.substring(-8, 13);
+      document.getElementById("demo6").innerHTML = z;
+    </script>
+
+    <p>
+      If the parameter is negative, the position is counted from the end of the
+      string.
+    </p>
+    <p id="demo2"></p>
+    <p id="demo3"></p>
+    <p>
+      If you ommit the second parameter, the method will slice out the rest of
+      the string.
+    </p>
+    <p id="demo4"></p>
+    <p>Or counting from the end.</p>
+    <p id="demo5"></p>
+
+    <h2>JavaScript string substring()</h2>
+    <p>
+      substring() and Slice() are similar. <br />
+      The difference is that in substring() values less than 0 are treated as 0.
+    </p>
+    <p id="demo6"></p>
+  </body>
+</html>
