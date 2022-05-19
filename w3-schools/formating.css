@@ -1,0 +1,20 @@
+h1{
+    text-align: center;
+    color: brown;
+    text-shadow: 2px 2px ;
+}
+body{
+    background-color: powderblue;
+}
+pre.b{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: large;
+}
+span.a{
+    color: red;
+}
+p.c{
+    font-size: larger;
+    text-align: justify;
+
+}
