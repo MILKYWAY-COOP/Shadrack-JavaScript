@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript strings</title>
+  </head>
+  <body>
+    <h2>JavaScript string Properties</h2>
+    <p>The lenght property returns the lenght of a string</p>
+    <p id="demo"></p>
+
+    <script>
+      let text = "qwertyuioplkjhgfdsazxcvbnm";
+      document.getElementById("demo").innerHTML = text.length;
+    </script>
+
+    <h3>Escape character</h3>
+    <p>The escape sequence \" inserts a double quote in astring.</p>
+    <p id="demo2"></p>
+    <p id="demo3"></p>
+    <script>
+      let text2 = 'We are so called "Vikings" from the north';
+      document.getElementById("demo2").innerHTML = text2;
+
+      let text3 = "The character \\ is called a backslash";
+      document.getElementById("demo3").innerHTML = text3;
+    </script>
+
+    <!-- breaking long code lines -->
+    <h4>JavaScript statements</h4>
+    <p>The best place to break a code line is after an operator or a coma.</p>
+    <p id="demo44"></p>
+
+    <script>
+      document.getElementById("demo44").innerHTML = "Hey you";
+    </script>
+
+    <p>
+      You can break a code linewithin a text string by using a backslash \
+      <br />
+      The safer way to break a string is by using string addition.
+    </p>
+    <p id="demo5"></p>
+    <script>
+      document.getElementById("demo5").innerHTML = "Hey " + "you";
+    </script>
+
+    <p>
+      <strong
+        >Strings can also be defined as objects with the keyword new</strong
+      >/p>
+    </p>
+    <p id="demo6"></p>
+    <p id="demo7"></p>
+    <p id="demo8"></p>
+
+    <script>
+      //x is a string
+      let x = "Sheddiey";
+
+      //y is an object
+      let y = new String("Sheddiey");
+
+      document.getElementById("demo6").innerHTML = typeof x + "<br>" + typeof y;
+      document.getElementById("demo7").innerHTML = x == y;
+      document.getElementById("demo8").innerHTML = x === y;
+    </script>
+
+    <h3>Never create strings as Objects</h3>
+    <p><strong>JavaScript objects cannot be compared</strong></p>
+    <p id="demo9"></p>
+    <script>
+      //x is a object
+      let x1 = new String("Sheddiey");
+
+      //y is an object
+      let y1 = new String("Sheddiey");
+      document.getElementById("demo9").innerHTML = x1 == y1;
+      alert(x1);
+    </script>
+  </body>
+</html>

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript Elements</title>
+  </head>
+  <body>
+    <h2>JS events.</h2>
+    <p>
+      HTML events are <strong>"things"</strong> that happen to html elements.
+      <br />
+      When JS is used in HTML pages, JavaScript can <strong>"react"</strong> on
+      this events. <br />
+      Here are some examples of HTML events: <br />
+      <li>An HTML web page has finished loading. <br /></li>
+      <li>An HTML input field was changed. <br /></li>
+      <li>An HTML button was clicked. <br /></li>
+    </p>
+
+    <button onclick="document.getElementById('demo').innerHTML = Date()">
+      The time is?
+    </button>
+    <p id="demo"></p>
+
+    <h2>JavaScript HTML elements part 2</h2>
+    <p>The code changes the contents of its own element.</p>
+
+    <button onclick="this.innerHTML = Date()">The time is?</button>
+    <p>
+      JavaScript code is often several lines long, it is more common to see
+      events attributes calling functions. <br />
+      Click the button to display time.
+    </p>
+
+    <button onclick="displayDate()">The time is?</button>
+    <script>
+      function displayDate() {
+        document.getElementById("demo2").innerHTML = Date();
+      }
+    </script>
+
+    <p id="demo2"></p>
+
+    <h3>Common HTML events.</h3>
+    <p>Here is a list of some common HTML events.</p>
+
+    <style>
+      #events {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        border-collapse: collapse;
+        width: 100%;
+      }
+      #events th,
+      #events td {
+        border: 1px solid #ddd;
+        padding: 8px;
+      }
+
+      #events tr:nth-child(even) {
+        background-color: #f2f2f2;
+      }
+      #events th:hover {
+        background-color: #ddd;
+      }
+
+      #events th {
+        padding-top: 12px;
+        padding-bottom: 12px;
+        text-align: left;
+        background-color: #04aa6d;
+        color: white;
+      }
+      ul.b {
+        list-style-type: square;
+      }
+      ul.c {
+        list-style-type: circle;
+      }
+    </style>
+    <h2>Events table</h2>
+    <table id="events">
+      <tr>
+        <th>Event</th>
+        <th>Description</th>
+      </tr>
+      <tr>
+        <td>onchange</td>
+        <td>Tn HTML element has been changed</td>
+      </tr>
+      <tr>
+        <td>onclick</td>
+        <td>The user clicks an HTML element</td>
+      </tr>
+      <tr>
+        <td>onmouseover</td>
+        <td>The user moves a mouse over an HTML element</td>
+      </tr>
+      <tr>
+        <td>onmouseout</td>
+        <td>The user moves a mouse away from an HTML element</td>
+      </tr>
+      <tr>
+        <td>onkeydown</td>
+        <td>The user pushes a keyboard key</td>
+      </tr>
+      <tr>
+        <td>onload</td>
+        <td>The browser has finished loading the page</td>
+      </tr>
+    </table>
+
+    <h2>JavaScript event handlers</h2>
+    <p>
+      Event handlers can be used to handle and verify user input, user actions,
+      and browser actions: <br />
+    </p>
+    <ul class="a">
+      <li>Things that should be done every time a page loads</li>
+      <li>Things that should be done when the page is closed</li>
+      <li>Action that should be performed when a user clicks a button</li>
+      <li>Content that should be verified when a user inputs data</li>
+      <li>And more,,,,</li>
+    </ul>
+    <p>
+      Many different methods can be used to let JavaScript work with events:
+    </p>
+    <ul class="c">
+      <li>HTML event attributes can execute JavaScript code directly</li>
+      <li>HTML event attributes can call JavaScript functions</li>
+      <li>You can assign your own event handler functions to HTML elements</li>
+      <li>You can prevent events from being sent or being handled</li>
+      <li>And more.,,,,,</li>
+    </ul>
+  </body>
+</html>

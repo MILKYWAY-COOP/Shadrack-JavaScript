@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Strings Methods part 2</title>
+  </head>
+  <body>
+    <style>
+      body {
+        background-color: #ff9900;
+      }
+      p.a,
+      h2.b {
+        font-style: italic;
+        letter-spacing: 3px;
+        font-size: larger;
+      }
+      samp.c {
+        color: red;
+      }
+      mark {
+        background-color: #fd5151;
+      }
+    </style>
+
+    <!-- <link rel="stylesheet" href="strings.css"> -->
+    <h2>JavaScript strings "Substr()"</h2>
+    <p>
+      substr() is similar to slice(). <br />
+      The difference is in subtr() the second parameter specifies the length of
+      the extracted part.
+    </p>
+
+    <p id="demo"></p>
+
+    <p>
+      If you ommit the second parameter the substr() slices out the rest of the
+      string.
+    </p>
+    <p id="x"></p>
+    <script>
+      let str = "Milk, tea, coffee";
+      let x = str.substr(6);
+      document.getElementById("x").innerHTML = x;
+    </script>
+    <p>
+      If the parameter is negative, the position counts from the end of the
+      string.
+    </p>
+    <p id="demo2"></p>
+    <script>
+      let y = str.substr(-6);
+      document.getElementById("demo2").innerHTML = y;
+    </script>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam labore esse
+      porro hic officia recusandae facere eveniet numquam veniam delectus.
+    </p>
+
+    <h3>Replacing String content.</h3>
+    <p>
+      The replace() method replaces a specified value with another value in a
+      string.
+    </p>
+
+    <p>Replace "Microsoft" with "W3Schools" in the paragraph below.</p>
+    <button onclick="myFunctiion()">Try it!</button>
+    <p id="demo5">Please learn JavaScript using Microsoft.</p>
+
+    <script>
+      function myFunctiion() {
+        let text = document.getElementById("demo5").innerHTML;
+        document.getElementById("demo5").innerHTML = text.replace(
+          "Microsoft",
+          "W3Schools"
+        );
+      }
+    </script>
+
+    <h2 class="b">Note</h2>
+    <p class="a">
+      The <samp class="c">replace()</samp> method does not change the string it
+      is called on. <br />
+      The <samp class="c">replace()</samp> method returns a new string. <br />
+      The <samp class="c">replace()</samp> method
+      <strong>replaces only the first match</strong> If you want to replace all
+      matches, use a regular expression with the /g flag set. <br />
+      See examples below.
+    </p>
+    <p>
+      By default the <samp class="c">replace()</samp> property only replaces the
+      first match. <br />
+      The <samp class="c">replace()</samp> method is also case sensitive.
+    </p>
+    <button onclick="myFunction2">Try it!</button>
+    <p id="demo7">Please visit Microsoft and Microsoft.</p>
+    <script>
+      function myFunctiion2() {
+        let text2 = document.getElementById("demo7").innerHTML;
+        document.getElementById("demo7").innerHTML = text2.replace(
+          "/Microsoft/i",
+          "W3Schools"
+        );
+      }
+    </script>
+    <p>
+      To replace all matches use a regular expression with a
+      <mark>/g</mark> flag (global match)
+    </p>
+
+    <button onclick="globalMatch">Try it!</button>
+    <p id="xy">Please visit Microsoft and Microsoft.</p>
+    <script>
+      function globalMatch() {
+        let z = document.getElementById("xy").innerHTML;
+        document.getElementById("xy").innerHTML = text.replace(
+          /Microsoft/gs,
+          "W3Schools"
+        );
+      }
+    </script>
+  </body>
+</html>
