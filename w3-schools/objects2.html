@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JS objects</title>
+  </head>
+  <body>
+    <h2>JavaScript objects</h2>
+
+    <p id="demo"></p>
+    <p id="demo2"></p>
+    <p id="demo3"></p>
+    <p id="methods"></p>
+
+    <style>
+      body {
+        background-color: black;
+      }
+      h2,
+      p {
+        color: antiquewhite;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 20px;
+        font-style: inherit;
+      }
+    </style>
+    <script>
+      //create an object
+      const car = {
+        color: "white",
+        model: "500",
+        type: "Benz",
+      };
+      //display some properties of the object
+      document.getElementById("demo").innerHTML =
+        "This car's color is " + car.color;
+
+      const person = {
+        firstName: "Shadrack",
+        lastName: "Cheruiyot",
+        age: 27,
+        eyeColor: "blue",
+      };
+      document.getElementById("demo2").innerHTML =
+        person.firstName + " is " + person.age + " " + "years old.";
+
+      document.getElementById("demo3").innerHTML = person["lastName"];
+
+      const person2 = {
+        firstName2: "Sheddiey",
+        lastName2: "Shaddy",
+        id: 27,
+        eyeColor2: "blue",
+        fullName: function () {
+          return this.firstName2 + " " + this.lastName2;
+        },
+      };
+      Document.getElementById("methods").innerHTML = person.fullName();
+    </script>
+  </body>
+</html>
