@@ -1,0 +1,161 @@
+body{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    background-color: #fffdeb;
+    /* float: left;
+    padding: 10px;
+    width: 50%;
+    height: 300px; */
+}
+
+.navBars{
+    margin: 0%;
+    width: 100%;
+}
+
+.navBar--1{
+    background-color: #1d1414;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 60px;
+    align-items: center;
+    margin: 0%;
+}
+
+
+.logo1 > button{
+    margin: 15px;
+    background-color: transparent;
+    color: white;
+    border: none;
+    font-family: 'Pacifico', cursive;
+    font-size: 34px;
+}
+
+
+.s2{
+    margin: 20%;
+}
+
+.s2 > button{
+    background-color: transparent;
+    color: white;
+    margin-left: 50px;
+    border: none;
+}
+
+.s2 > button:hover{
+    background-color: rgb(15, 15, 15);
+    border: solid;
+    height: 37px;
+}
+
+.navBar--2{
+    display: flex;
+    flex-direction: row;
+    background-color: rgba(194, 194, 16, 0.966);
+    height: 50px;
+    align-items: center;
+}
+.s--3 {
+    align-content: center;
+    justify-content: space-between;
+    margin-left: 350px;
+}
+
+.s--3 > button{
+    background-color: transparent;
+    color: white;
+    margin: 23px;
+    border: none;
+}
+
+.s--3 > button:hover{
+    background-color: darkgoldenrod;
+    height: 50px;
+    border: 1px solid;
+}
+
+.part--a{
+    margin: 20px;
+    display: block;
+    background-color: #fff5ba;
+    width: 200px;
+    height: 320px;
+    display: flex;
+    flex-direction: column;
+    padding: 16px 24px;
+
+}
+
+.list--1{
+    width: 200px;
+    padding-right: 20px;
+    padding-left: 0px;
+    padding-bottom: 20px;
+    list-style: none;
+    margin: 0px;
+    
+}
+
+.list--1 > li{
+    justify-content: space-between;
+    margin: 5px;
+    font-family: 'Koulen', cursive;
+}
+
+
+.part--c{
+    margin: 20px;
+    display: block;
+    background-color: #fff5ba;
+    width: 230px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    padding: 9px 8px;
+    text-align: center;
+
+}
+
+.h2{
+    font-size:29px;
+    color: rgb(164, 7, 7);
+    font-family: 'Anton', sans-serif;
+}
+
+
+.part--b{
+    background-color: #ebd61b;
+    height: 800px;
+    width: 900px;
+    display: flex;
+    flex-direction: column;
+    padding: 9px 8px;
+    padding-top: 0px;
+    float: right;
+    margin-top: 0px;
+    margin-block-start: 30px;
+}
+
+.part--b-1 > h2 {
+    font-family: 'Black Ops One', cursive;
+    font-size: 36px;
+}
+
+.p1{
+    color: red;
+}
+.p2{
+    font-family: 'Bilbo', cursive;
+    font-size: larger;
+}
+
+.part--b-1 > h3{
+    font-family: 'Teko', sans-serif;
+    font-size: 30px;
+}
+
+
