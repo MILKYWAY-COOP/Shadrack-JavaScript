@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        h1{
+            font-weight: bold;
+            font-size: 40px;
+            color: brown;
+        }
+        
+        p{
+            font-size: 20px;
+            font-weight: bold;
+        }
+        
+        span{
+            color: red;
+            font-weight: bold;
+            font-style: italic;
+        }
+        
+        .grid-container{
+            display: grid;
+            height: 400px;
+            align-content: space-around;
+            grid-template-columns: auto auto auto ;
+            background-color: rgb(24, 138, 138);
+            gap: 10px;
+            padding: 10px;
+        }
+        
+        .grid-container > div{
+            background-color: aqua;
+            text-align: center;
+            font-size: 30px;
+            padding: 20px 0px;
+        }
+    </style>
+    <h1>The space-around value</h1>
+    <p>
+        The value <span>space-around</span> will give the rows equal amount of space around them:
+    </p>
+    <div class="grid-container">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+</body>
+</html>
