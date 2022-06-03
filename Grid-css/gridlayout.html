@@ -7,13 +7,52 @@
     <title>GRID CSSS</title>
   </head>
   <body>
+    <style>
+      .grid-container {
+        display: grid;
+        background-color: #f3d202;
+        gap: 10px;
+        padding: 10px;
+        height: 360px;
+      }
+      .grid-item {
+        background-color: rgb(104, 93, 93);
+        padding: 20px;
+        font-size: 40px;
+        font-weight: bold;
+        text-align: center;
+        color: aliceblue;
+      }
+      .item1 {
+        grid-column: 1 / span 2;
+        grid-row: 1;
+      }
+      .item2 {
+        grid-column: 3;
+        grid-row: 1 / span 2;
+      }
+      .item5 {
+        grid-column: 1 / span 3;
+      }
+      h1 {
+        font-weight: bold;
+        font-size: 40px;
+        color: brown;
+      }
+
+      p {
+        font-size: 20px;
+        font-weight: bold;
+      }
+    </style>
+
     <h1>A five items grid layout</h1>
     <div class="grid-container">
-      <div class="grid-item1">1</div>
-      <div class="grid-item2">2</div>
-      <div class="grid-item3">3</div>
-      <div class="grid-item4">4</div>
-      <div class="grid-item5">5</div>
+      <div class="grid-item item1">1</div>
+      <div class="grid-item item2">2</div>
+      <div class="grid-item item3">3</div>
+      <div class="grid-item item4">4</div>
+      <div class="grid-item item5">5</div>
     </div>
     <p>
       Direct child elements of the grid container automatically becomes grid
