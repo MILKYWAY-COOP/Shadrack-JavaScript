@@ -1,0 +1,6 @@
+body{
+    background-image: url(https://www.publicdomainpictures.net/pictures/320000/velka/background-image.png), url(https://www.publicdomainpictures.net/pictures/20000/velka/background-with-flower-and-butterfl.jpg);
+    background-position: left top, left top;
+    background-repeat: no-repeat, repeat;
+    padding: 75px;
+}

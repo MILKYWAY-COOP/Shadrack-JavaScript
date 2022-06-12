@@ -1,0 +1,38 @@
+body{
+    background-color: aqua;
+    display: grid;
+}
+h2, h1 {
+    color: rgb(23, 8, 8);
+    font: 34px;
+    font-weight: bold;
+}
+span{
+    color: red;
+}
+
+button{
+    border-radius: 16px;
+    background-color: red;
+    color: white;
+    padding: 10px;
+}
+button:hover{
+    transform: scale(1.2);
+    background-color: transparent;
+    cursor: pointer;
+    background-color: black;
+    border: 2px solid red;
+}
+.part2{
+    display: block;
+    background-color: #f6ebda;
+    padding: 23px;
+    font-size: 26px;
+    font-style: italic;
+}
+
+.part2:hover{
+    background-color: transparent;
+    border: 3px solid black;
+}
