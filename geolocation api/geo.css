@@ -1,0 +1,24 @@
+body{
+    background-color: aqua;
+}
+.main{
+    display: grid;
+    grid-template-columns: auto auto;
+}
+span{
+    color: red;
+    font-style: italic;
+}
+p{
+    font-weight: bold;
+}
+
+.giphy{
+    width: 480px;
+    height: 600px;
+}
+.coordinates{
+    margin-left: -250px;
+    font-family: 'Roboto Mono', monospace;
+    opacity: 1.0;
+}
