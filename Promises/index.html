@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Promises JavaScript</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div>
+        <h2>JavaScript Promise</h2>
+        <p>
+            Promises in JavaScript allows us to do 
+            asynchronous operations where the is not known in 
+            advanced when the promise was being created. <br> 
+            A promise can have three states
+            <ul>
+                <li>pending</li> 
+                <li>fulfilled</li>
+                <li>rejected</li>
+            </ul>
+        </p>
+        <p>
+             A <span>Promise</span> is a JavaScript object that links <span>producing code</span> 
+             and calls to the <span>consuming code</span>.
+        </p>
+        <p id="demo"></p>
+    </div>
+    <script>
+        function myDisplayer(some){
+            document.getElementById("demo").innerHTML = some;
+        }
+
+
+        let myPromise = new Promise(function(myResolve, myReject){
+            let x = 8;
+
+            // producing code(may take sometime)
+            //when the value of x is not zero it displays error
+            //when x is zero it displays okay
+             if (x==0){  
+                myResolve("Okay");
+             }
+             else{
+                myReject("Error");
+             }
+        });
+
+        //consuming code(must wait for a fulfilled promise)
+        myPromise.then(
+            function(value) {myDisplayer(value);},
+            function(error) {myDisplayer(error);}
+        );
+    </script>
+</body>
+</html>

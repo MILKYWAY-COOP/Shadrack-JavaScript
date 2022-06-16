@@ -1,0 +1,30 @@
+body{
+    font-size: 23px;
+    background-color: aqua;
+}
+span{
+    color: red;
+    font-style: italic;
+}
+li{
+    list-style-type: square;
+}
+.script{
+    background-color: rgb(218, 231, 236);
+    padding: 20px 0px;
+    margin: 0px;
+}
+.script > p, h1 {
+    margin-left: 15px;
+}
+.notes{
+    background-color: #d3d30b;
+}
+.notes > p {
+    margin-left: 15px;
+}
+
+.code{
+    background-color: black;
+    color: white;
+}

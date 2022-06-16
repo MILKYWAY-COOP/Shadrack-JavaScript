@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>setTimeout()</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <h1>Waiting for a Timeout</h1>
+    <h2>JavaScript <span>setTimeout() </span>method</h2>
+    <p>
+      JavaScript <span>setTimeout()</span> property. <br />
+      It calls a function after anumber of miliseconds. <br />
+      The <span>setTimeout</span> is only excecuted once. <br />
+    </p>
+
+<!-- use of promises in JavaScript example -->
+    <hr />
+    <div class="script">
+      <p>
+        Wait for 5 seconds (5000 miliseconds) for this page to display. <br />
+        It will display within the <span>&lt;hr&gt; element.</span>
+      </p>
+      <h1 id="demo"></h1>
+      <script>
+        setTimeout(function() { myFunction("My legacy will be Gifting Humanity!!");}, 5000);
+
+        function myFunction(value) {
+            document.getElementById("demo").innerHTML = value;
+        }
+      </script>
+    </div>
+    <hr />
+
+
+    <div class="notes">
+      <p>
+        If you need repeated excecutions use <span>setInterval()</span> instead.
+        <br />
+        Use the <span>clearTimeout()</span> method to prevent the function from
+        starting. <br />
+        To clear a timeout use the <strong>id</strong> returned from
+        <span>setTimeout()</span>. <br />
+      </p>
+
+      <div class="code">
+        <code>myTimeout = setTimeout(function, miliseconds);</code>
+      </div>
+
+      <p>
+        Then you can stop the excecutions by calling
+        <span>clearTimeout()</span>:
+      </p>
+
+      <div class="code">
+        <code>clearTimeout(myTimeout);</code>
+      </div>
+
+    </div>
+  </body>
+</html>
