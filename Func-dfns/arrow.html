@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Arrow Functions</title>
+    <link rel="stylesheet" href="expr.css" />
+    <script src="arrow.js"></script>
+  </head>
+  <body>
+    <h2>Arrow Functions</h2>
+    <p>
+      They allow a short syntax for writing functions expressions. <br />
+      You don't need the <span>function</span> keyword, and the
+      <span>return</span> keyword and the <strong>carly brackets.</strong>
+    </p>
+
+    <p>Arrow functions are not supported in IE11 or earlier.</p>
+    <p id="demo1"></p>
+    <p id="demo"></p>
+    <hr>
+
+    <p>
+      Arrow functions do not have their own <span>this</span>. <br />
+      They are not well suited for defining <strong>object methods</strong>.
+      <br />
+      Arrow functions are not hoisted. They must be defined before they are
+      used. <br />
+      Using <span>const</span> is safer than using <span>var</span>, because
+      functions expression is always constant value. <br />
+      You can only omit the <span>return</span> keyword and the
+      <strong>carly brackets</strong> if the function is a single statement.
+      <br />
+      Because of this it might be a good habit to always keep them.
+    </p>
+    <p id="demo2"></p>
+  </body>
+</html>
