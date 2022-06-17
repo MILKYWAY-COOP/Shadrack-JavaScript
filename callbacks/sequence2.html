@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <style>
+      body {
+        font-size: 25px;
+        font-style: italic;
+        background-color: rgb(255, 255, 36);
+      }
+      span {
+        color: red;
+      }
+    </style>
+
+    <h2>JavaScript functions</h2>
+
+    <h3>Sequence Control</h3>
+
+    <p>
+      sometimes you would like to have better control over when to excecute a
+      function. <br />
+      Suppose you want to do a calculation and then display the result. <br />
+      You call a calculator function <span>(myCalculator)</span> save the result
+      then call another function <span>myDisplayer</span> to display the result.
+    </p>
+
+    <p>do a calculation and then display the result.</p>
+    <p id="demo"></p>
+
+    <script>
+      function myDisplayer(some) {
+        document.getElementById("demo").innerHTML = some;
+      }
+
+      function myCalculator(num1, num2) {
+        let sum = num1 + num2;
+        return sum;
+      }
+
+      let result = myCalculator(5, 7);
+      myDisplayer(result);
+    </script>
+
+    <p>
+      or, you call a calculator function <span>myCalculator</span> and let the
+      calculator function call the display function.
+    </p>
+
+    <p id="demo1"></p>
+
+    <script>
+        function myDisplayer(some) {
+            document.getElementById("demo1").innerHTML = some;
+          }
+    
+          function myCalculator(num1, num2) {
+            let sum = num1 + num2;
+            myDisplayer(sum);
+          }
+
+          myCalculator(5, 55)
+    </script>
+  </body>
+</html>
