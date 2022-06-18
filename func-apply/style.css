@@ -1,0 +1,15 @@
+title{
+    color: #263cff;
+    background-color: blanchedalmond;
+}
+span{
+    color: red;
+}
+body{
+    color: #263cff;
+    background-color: blanchedalmond;
+    font-size: 30px;
+}
+body:hover{
+    background-color: white;
+}
