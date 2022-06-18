@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>invoking a function</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="invoke.js"></script>
+  </head>
+  <body>
+    <h2>Invoking a function as a function</h2>
+    <p>
+      <em>NOTE:</em>This is a common way to invoke a JavaScript function, but
+      not a very good practice. Global variables, methods, or functions can
+      easily create name conflicts and bugs in the global object.
+    </p>
+    <p>
+      The global function (myFunction) returns the product of the arguments (a
+      ,b):
+    </p>
+    <p class="demo"></p>
+    <hr />
+
+    <p>
+      The global object. When a function is called without an owner object the
+      value of <span>this</span> becomes the global object.
+    </p>
+    <p id="demo7"></p>
+    <hr />
+
+    <h2>Invoking a function with a function constructor.</h2>
+    <p>
+      The <span>this</span> keyword in the constructor does not have a value. The value of
+      <span>this</span> will be the new object created when the function is invoked.
+    </p>
+  </body>
+</html>
