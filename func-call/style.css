@@ -1,0 +1,14 @@
+body{
+    background-color: black;
+    color: white;
+    font-size: 29px;
+}
+span{
+    color: red;
+}
+span:hover{
+    background-color: transparent;
+    transform: scale(1.2);
+    padding: 12px;
+    border: 1px solid red;
+}
