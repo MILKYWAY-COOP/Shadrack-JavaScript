@@ -1,0 +1,27 @@
+body{
+    background-color: blanchedalmond;
+    color: blue;
+    font-size: 30px;
+}
+span{
+    color: red;
+}
+span:hover{
+    background-color: black;
+    border: 2px solid red;
+    padding: 12px;
+    border-radius: 120px;
+}
+button{
+    padding: 12px;
+    font-size: 23px;
+    border-radius: 18px;
+    color: white;
+    background-color: black;
+}
+button:hover{
+    background-color: transparent;
+    border: 2px solid red;
+    color: black;
+    transition: .3s;
+}

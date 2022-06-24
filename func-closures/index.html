@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>closures</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <h2>JavaScript closures</h2>
+    <p>
+      JavaScript variables can belong to the <b>local</b> or
+      <b>global </b>scope. <br />
+      Global variables can be made local (private) with <b>closures</b>
+    </p>
+    <h3>Global variables</h3>
+    <p>
+      A <span>function</span> can acces all variables defined <b>inside</b> the
+      function.
+    </p>
+    <p>
+      But a <span>function </span> can also access variables defined
+      <b>outside</b> the function.
+    </p>
+    <p>
+      In Ex 2 <b>a</b> is a <b>global</b> variable. <br />
+      In a web page, global variables belong to the window object. <br />
+      Global variables can be used (and changed) by all scripts in the page (and
+      in the window). <br />
+      in Ex 1 <b>a</b> is a <b>local</b> variable. <br />
+      A local variable can only be used inside the function where it is defined.
+      It is hidden from other functions and other scripting code. <br />
+      Global and local variables with the same name are different variables.
+      Modifying one, does not modify the other.
+    </p>
+    <hr />
+    <h2>JavaScript Function closures</h2>
+    <p>counting with a global variable</p>
+    <p>
+      It did not work because we display the global counter instead of the local
+      counter. <br />
+      We can remove the global counter and access the local counter by letting
+      the function return it:
+    </p>
+    <hr />
+    <button type="button" onclick="myFunc()">count!</button>
+    <div class="x">0</div>
+    <hr>
+    <h2>Nested functions.</h2>
+    <p>
+      JavaScript allows for the nesting of functions and
+      <b
+        >grants the inner function full access to all the variables and
+        functions defined inside the outer function</b
+      >
+      (and all other variables and functions that the outer function has access
+      to).
+    </p>
+    <hr />
+    <h1>JavaScript closures</h1>
+    <p>
+      A closure is the combination of a function bundled together (enclosed)
+      with references to its surrounding state (the lexical environment)
+    </p>
+    <button type="button" onclick="myFunct()">Count!</button>
+    <div class="demo"></div>
+  </body>
+</html>
